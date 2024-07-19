@@ -8,10 +8,12 @@ import java.io.IOException;
 import javax.swing.JButton;
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
 
 public class FileSelector {
 
-    public static void main(String[] args) {
+    public void selectfile(JTextArea jTextArea) {
         JFrame frame = new JFrame("File Selector");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(400, 200);
@@ -29,9 +31,11 @@ public class FileSelector {
                 try {
                     String response = client.uploadFile(selectedFile);
                     System.out.println("Response from API: " + response);
+                    jTextArea.setText(response); // Coloca el texto en el JTextField
                 } catch (IOException ex) {
                     ex.printStackTrace();
                 }
+                frame.dispose();
             }
         });
 
@@ -39,3 +43,4 @@ public class FileSelector {
         frame.setVisible(true);
     }
 }
+
