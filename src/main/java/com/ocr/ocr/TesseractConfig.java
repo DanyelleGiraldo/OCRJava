@@ -11,7 +11,7 @@ public class TesseractConfig {
     @Bean
     Tesseract tesseract() {
         Tesseract tesseract = new Tesseract();
-        tesseract.setDatapath("src\\main\\resources\\tessdata");
+        tesseract.setDatapath("src\\main\\resources\\tessdata_best");
         return tesseract;
     }
 

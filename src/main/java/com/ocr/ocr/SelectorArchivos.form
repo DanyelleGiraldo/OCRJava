@@ -27,7 +27,7 @@
               <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="SelectArchivo" min="-2" max="-2" attributes="0"/>
-                  <Component id="jScrollPane1" min="-2" pref="687" max="-2" attributes="0"/>
+                  <Component id="jScrollPane1" min="-2" pref="872" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="24" max="32767" attributes="0"/>
           </Group>
@@ -39,8 +39,8 @@
               <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
               <Component id="SelectArchivo" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="jScrollPane1" min="-2" pref="320" max="-2" attributes="0"/>
-              <EmptySpace pref="20" max="32767" attributes="0"/>
+              <Component id="jScrollPane1" min="-2" pref="400" max="-2" attributes="0"/>
+              <EmptySpace pref="50" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
