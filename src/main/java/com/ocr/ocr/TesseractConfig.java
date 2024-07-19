@@ -12,6 +12,7 @@ public class TesseractConfig {
     Tesseract tesseract() {
         Tesseract tesseract = new Tesseract();
         tesseract.setDatapath("src\\main\\resources\\tessdata_best");
+        tesseract.setLanguage("spa");
         return tesseract;
     }
 
