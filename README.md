@@ -41,8 +41,4 @@ El proyecto **OCRJava** tiene como objetivo desarrollar una solución avanzada d
 
 Las contribuciones al proyecto son bienvenidas. Por favor, realiza un fork del repositorio y envía un pull request con tus mejoras o correcciones.
 
-## Contacto
-
-Para consultas adicionales o soporte, contacta a [tu correo electrónico] o visita [tu página de GitHub].
-
 ![OCRExp](https://github.com/user-attachments/assets/b8b45f3a-55d1-405b-a9f8-cac9b4f1ad34)
