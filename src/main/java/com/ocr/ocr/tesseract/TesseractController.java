@@ -1,4 +1,4 @@
-package com.ocr.ocr;
+package com.ocr.ocr.tesseract;
 
 import java.io.IOException;
 

@@ -9,7 +9,6 @@ import javax.swing.JButton;
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JTextArea;
-import javax.swing.JTextField;
 
 public class FileSelector {
 
@@ -31,7 +30,13 @@ public class FileSelector {
                 try {
                     String response = client.uploadFile(selectedFile);
                     System.out.println("Response from API: " + response);
-                    jTextArea.setText(response); // Coloca el texto en el JTextField
+                    jTextArea.setText(response); 
+                    
+                    FacturaParser facturaParser = new FacturaParser();
+
+                    // Procesar el texto del OCR
+                    facturaParser.processOcrText(response);
+                    
                 } catch (IOException ex) {
                     ex.printStackTrace();
                 }
@@ -41,6 +46,5 @@ public class FileSelector {
 
         container.add(button);
         frame.setVisible(true);
-    }
 }
-
+}
