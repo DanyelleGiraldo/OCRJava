@@ -5,7 +5,6 @@ import java.util.regex.Pattern;
 
 public class FacturaParser {
     public void processOcrText(String text) {
-        // Aquí se implementa el procesamiento del texto para extraer los datos
         extractAndPrint("ID", Pattern.compile("(\\d{8,})"), text);
         extractAndPrint("Fecha", Pattern.compile("(\\d{2}/\\d{2}/\\d{4})"), text);
         extractAndPrint("Detalle", Pattern.compile("([A-Z]+\\s+[A-Z]+\\s+[A-Z]+)"), text);
